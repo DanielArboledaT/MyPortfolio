@@ -220,6 +220,7 @@
     justify-content: center;
     text-align: center;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 576px) {
