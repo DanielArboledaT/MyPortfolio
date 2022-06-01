@@ -11,3 +11,8 @@ var swiper = new Swiper('.blog-slider', {
       clickable: true,
     }
 });
+
+
+function downloadCv() {
+    window.open('https://drive.google.com/file/d/1op_JhcFF7lAjrmltE_NmU8mMwI0xkKAJ/view?usp=sharing');
+}

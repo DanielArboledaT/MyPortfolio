@@ -19,17 +19,17 @@
 
 <body>
 
-    <div class="banner">
+    <div class="banner" id="home">
         <nav class="header">
             <input type="checkbox" name="" id="chk1">
             <div class="logo">
                 <img src="/img/logo.png" width="150" alt="">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="https://www.linkedin.com/in/danielarboleda"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/DanielArboledaT"><i class="fa-brands fa-github"></i></a>
@@ -56,7 +56,7 @@
 
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="about-container">
             <h2>About</h2>
             <p>
@@ -130,12 +130,11 @@
                 </div>
             </div>
             <br>
-            <a href="https://github.com/DanielArboledaT/FinaktivaFront" class="blog-slider__button">Download CV</a>
+            <a onclick="downloadCv()" class="blog-slider__button">Download CV</a>
 
         </div>
 
-
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
 
             <div>
                 <h2>Protfolio</h2>
@@ -143,48 +142,51 @@
                     Here you can see the projects I've worked on
                 </p>
             </div>
-            
-
+    
+    
             <div class="blog-slider">
                 <div class="blog-slider__wrp swiper-wrapper">
-
+    
                     <div class="blog-slider__item swiper-slide">
                         <div class="blog-slider__img">
-                            <img src="/img/finaktiva-back.png"
-                                alt="">
+                            <img src="/img/finaktiva-back.png" alt="">
                         </div>
                         <div class="blog-slider__content">
                             <span class="blog-slider__code">Back-end security login - java (springboot)</span>
                             <div class="blog-slider__title">Security login java</div>
-                            <div class="blog-slider__text">This is a backend project where I customize the login by user roles thanks to a token and using springboot and jwt </div>
-                            <a href="https://github.com/DanielArboledaT/FinaktivaBackend" class="blog-slider__button">GET CODE</a>
+                            <div class="blog-slider__text">This is a backend project where I customize the login by user
+                                roles thanks to a token and using springboot and jwt </div>
+                            <a href="https://github.com/DanielArboledaT/FinaktivaBackend" class="blog-slider__button">GET
+                                CODE</a>
                         </div>
                     </div>
-
+    
                     <div class="blog-slider__item swiper-slide">
                         <div class="blog-slider__img">
-                            <img src="/img/finaktiva-front.png"
-                                alt="">
+                            <img src="/img/finaktiva-front.png" alt="">
                         </div>
                         <div class="blog-slider__content">
                             <span class="blog-slider__code">Front-end security login - Angular 10</span>
                             <div class="blog-slider__title">Login security angular</div>
-                            <div class="blog-slider__text">This project corresponds to the complement of the project backen security project</div>
-                            <a href="https://github.com/DanielArboledaT/FinaktivaFront" class="blog-slider__button">GET CODE</a>
+                            <div class="blog-slider__text">This project corresponds to the complement of the project backen
+                                security project</div>
+                            <a href="https://github.com/DanielArboledaT/FinaktivaFront" class="blog-slider__button">GET
+                                CODE</a>
                         </div>
                     </div>
-
+    
                 </div>
                 <div class="blog-slider__pagination"></div>
             </div>
-
+    
         </div>
-
-        <div class="contact">
-
+    
+        <div class="contact" id="contact">
+    
             <h2>Daniel Arboleda Tamayo</h2>
-            <p>If you are interested in my work and want to contact me, you can contact me on the following social networks</p>
-
+            <p>If you are interested in my work and want to contact me, you can contact me on the following social networks
+            </p>
+    
             <div class="wrapper">
                 <a href="https://github.com/DanielArboledaT" class="icon-social">
                     <i class="fa-brands fa-github"></i>
@@ -192,12 +194,13 @@
                 <a href="https://www.linkedin.com/in/danielarboleda" class="icon-social">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-              </div>
-
+            </div>
+    
         </div>
 
-
     </div>
+
+    
 
     <script text="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.js"></script>
