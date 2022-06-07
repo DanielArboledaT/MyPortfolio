@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@ html {
 }
 
 .banner {
-    background: url('/img/bg.jpg');
+    background-image: url('/img/bg.jpg');
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -328,4 +328,4 @@ i {
 
 
 
-}
+} */

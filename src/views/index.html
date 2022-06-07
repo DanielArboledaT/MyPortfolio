@@ -8,6 +8,7 @@
     <title>Daniel Arboleda / Desarrollador Full Stack</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -15,127 +16,398 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.css">
     <link rel="stylesheet" href="/css/slider.css">
+
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+
 </head>
 
 <body>
 
-    <div class="banner" id="home">
-        <nav class="header">
-            <input type="checkbox" name="" id="chk1">
-            <div class="logo">
-                <img src="/img/logo.png" width="150" alt="">
-            </div>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Acerca de mi</a></li>
-                <li><a href="#portfolio">Portafolio</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li>
-                    <a href="https://www.linkedin.com/in/danielarboleda"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/DanielArboledaT"><i class="fa-brands fa-github"></i></a>
-                </li>
-            </ul>
-            <div class="menu">
-                <label for="chk1">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Daniel</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#" id="home" class="nav_link">
+                            <i class="fa-solid fa-house nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="fa-solid fa-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" id="skils" class="nav_link">
+                            <i class="fa-solid fa-file-lines nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" id="portfolio" class="nav_link">
+                            <i class="fa-solid fa-briefcase nav_icon"></i>  Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" id="contact" class="nav_link">
+                            <i class="fa-solid fa-paper-plane nav_icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-xmark nav_close" id="nav-close"></i>
             </div>
 
-
+            <div class="nav_btns">
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="fa-solid fa-align-center"></i>
+                </div>
+            </div>
         </nav>
+    </header>
 
-        <div class="title-header">
-            <img src="/img/yo.jpg" width="200" alt="">
-            <div>
-                <h1> Hola!</h1>
-                <h1><strong>Yo soy Daniel Arboleda Tamayo</strong></h1>
-                <h1>Desarrollador Full Stack</h1>
+    <main class="main">
+
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+
+                    <div class="home_social">
+                        <a href="" class="home_social-icon" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="" class="home_social-icon" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="home_img">
+                        <img src="/img/me-home.png" alt="">
+                    </div>
+
+                    <div class="home_data">
+                        <h1 class="home_title"> Hi!, I'am Daniel </h1>
+                        <h3 class="home_subtitle">Full Stack developer</h3>
+                        <p class="home_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. I
+                            llum iure nobis nam animi voluptas nesciunt veritatis</p>
+                        <a href="" class="button button--flex">
+                            Contact Me <i class="fa-solid fa-comment button_icon"></i>
+                        </a>
+                    </div>
+
+                </div>
+                
+                <div class="home_scroll">
+                    <a href="#about" class="home_scroll-button button--flex">
+                        <i class="lni lni-mouse home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Scroll down</span>
+                        <i class="fa-solid fa-arrow-down home_scroll-arrow"></i>
+                    </a>
+                </div>
+
             </div>
+        </section>
 
-        </div>
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <span class="section_subtitle">My introduction</span>
 
-    </div>
+            <div class="about_container container grid">
+                <img src="/img/yo.jpg" alt="" class="about_img">
 
-    <div class="about" id="about">
-        <div class="about-container">
-            <h2>Acerca de mi</h2>
-            <p>
-                ¡Hola! soy Daniel, soy ingeniero informático y he estado trabajando como desarrollador full stack 
-                durante 3 años con experiencia en múltiples
-                plataformas y lenguajes de programación, busco un puesto de tiempo completo donde pueda aplicar mis
-                conocimientos y habilidades y seguir mejorando.
-            </p>
-            <h2>Mis habilidades</h2>
+                <div class="about_data">
+                    <p class="about_description">
+                        La verdad soy el puto amo, una leyenda en esta vuelta, es in creible la verdad muy dificil de creer
+                    </p>
+                    <div class="about_info">
+                        <div>
+                            <span class="about_info-title">08+</span>
+                            <span class="about_info-name">Years <br> experience</span>
+                        </div>
 
-            <div class="card-container">
-                <div class="box">
-                    <i class="lni lni-html5"></i>
-                    <h5>HTML</h5>
-                    <h4>HTML</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-css3"></i>
-                    <h5>CSS</h5>
-                    <h4>CSS</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-javascript"></i>
-                    <h5>JAVASCRIPT</h5>
-                    <h4>JAVASCRIPT</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-angular"></i>
-                    <h5>ANGULAR</h5>
-                    <h4>ANGULAR</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-java"></i>
-                    <h5>JAVA</h5>
-                    <h4>JAVA</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-sprout"></i>
-                    <h5>SPRING BOOT</h5>
-                    <h4>SPRING BOOT</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-python"></i>
-                    <h5>PYTHON</h5>
-                    <h4>PYTHON</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-git"></i>
-                    <h5>GIT</h5>
-                    <h4>GIT</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-docker"></i>
-                    <h5>DOCKER</h5>
-                    <h4>DOCKER</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-aws"></i>
-                    <h5>AWS</h5>
-                    <h4>AWS</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-cloud"></i>
-                    <h5>Google cloud plataform</h5>
-                    <h4>Google cloud plataform</h4>
-                </div>
-                <div class="box">
-                    <i class="lni lni-database"></i>
-                    <h5>SQL</h5>
-                    <h4>SQL</h4>
+                        <div>
+                            <span class="about_info-title">08+</span>
+                            <span class="about_info-name">Completed <br> projects</span>
+                        </div>
+
+                        <div>
+                            <span class="about_info-title">08+</span>
+                            <span class="about_info-name">Companies <br> worked</span>
+                        </div>
+                    </div>
+
+                    <div class="about_buttons">
+                        <a download="" href="/pdf/My-cv.pdf" class="button button--flex">
+                            Download CV<i class="lni lni-download button_icon"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <br>
-            <a onclick="downloadCv()" class="blog-slider__button">Descargar CV</a>
+        </section>
 
-        </div>
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">My technical level</span>
 
-        <div class="portfolio" id="portfolio">
+            <div class="skills_container container grid">
+                <div>
 
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="fa-solid fa-code skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Frontend developer</h1>
+                                <span class="skills_subtitle">More than 3 years</span>
+                            </div>
+
+                            <i class="fa-solid fa-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+                            <div>
+                                <i style="color: #e54c21;" class="lni lni-html5"></i>
+                                <p>HTML5</p>
+                            </div>
+                            <div>
+                                <i style="color: #254bdd;" class="lni lni-css3"></i>
+                                <p>HTML5</p>
+                            </div>
+                            <div>
+                                <i style="color: #efd81c;" class="lni lni-javascript"></i>
+                                <p>JAVASCRIPT</p>
+                            </div>
+                            <div>
+                                <i style="color: #d82d2f;" class="lni lni-angular"></i>
+                                <p>ANGULAR</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="fa-solid fa-server skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Backend developer</h1>
+                                <span class="skills_subtitle">More than 3 years</span>
+                            </div>
+
+                            <i class="fa-solid fa-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+                            <div>
+                                <i style="color: #d54e2b;" class="lni lni-java"></i>
+                                <p>JAVA</p>
+                            </div>
+                            <div>
+                                <i style="color: #65b743;" class="lni lni-sprout"></i>
+                                <p>SPRING BOOT</p>
+                            </div>
+                            <div>
+                                <i style="color: #f7cb2e;" class="lni lni-python"></i>
+                                <p>PYTHON</p>
+                            </div>
+                            <div>
+                                <i style="color: #006ec0;" class="lni lni-database"></i>
+                                <p>SQL/PLSQL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="lni lni-cloud skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Cloud services</h1>
+                                <span class="skills_subtitle">More than 1 year</span>
+                            </div>
+
+                            <i class="fa-solid fa-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+                            <div>
+                                <i style="color: #f79300;" class="lni lni-aws"></i>
+                                <p>AWS</p>
+                            </div>
+                            <div>
+                                <i style="color: #32a350;"  class="lni lni-cloud"></i>
+                                <p>GCP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="lni lni-circle-plus skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Extra knowledge</h1>
+                                <span class="skills_subtitle">More than 3 years</span>
+                            </div>
+
+                            <i class="fa-solid fa-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+                            <div>
+                                <i style="color: #eb4d28;" class="lni lni-git"></i>
+                                <p>GIT</p>
+                            </div>
+                            <div>
+                                <i style="color: #119ad4;" class="lni lni-docker"></i>
+                                <p>DOCKER</p>
+                            </div>
+                            <div>
+                                <i style="color: #f76801;" class="fa-brands fa-linux"></i>
+                                <p>LINUX</p>
+                            </div>
+                            <div>
+                                <i style="color: #f7c52a;" class="fa-solid fa-fire"></i>
+                                <p>FIREBASE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">Most recent work</span>
+
+            <div class="blog-slider">
+                <div class="blog-slider__wrp swiper-wrapper">
+    
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="/img/finaktiva-back.png" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">Back-end security login - java (springboot)</span>
+                            <div class="blog-slider__title">Security login java</div>
+                            <div class="blog-slider__text">Este es un proyecto de back-end donde personalizo el inicio de sesión por roles
+                                de usuario gracias a un token y usando springboot y jwt </div>
+                            <a href="https://github.com/DanielArboledaT/finaktiva-backend" class="button button--flex"><i style="margin-right: 5px;" class="lni lni-code-alt"></i> GET
+                                CODE</a>
+                        </div>
+                    </div>
+    
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="/img/finaktiva-front.png" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">Front-end security login - Angular 10</span>
+                            <div class="blog-slider__title">Login security angular</div>
+                            <div class="blog-slider__text">Este proyecto corresponde al complemento del proyecto Back-end security login</div>
+                            <a href="https://github.com/DanielArboledaT/finaktiva-front" class="button button--flex"><i style="margin-right: 5px;" class="lni lni-code-alt"></i> GET
+                                CODE</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="/img/finaktiva-back.png" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">Back-end  credibanco- java (springboot)</span>
+                            <div class="blog-slider__title">Credibanco transacciones</div>
+                            <div class="blog-slider__text">Este proyecto Es un administrador de tarjetas de credito y transacciones</div>
+                            <a href="https://github.com/DanielArboledaT/credibanco" class="button button--flex"><i style="margin-right: 5px;" class="lni lni-code-alt"></i> GET
+                                CODE</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="/img/portafolio.png" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">Mi portafolio - Nodejs (Express)</span>
+                            <div class="blog-slider__title">Portafolio personal</div>
+                            <div class="blog-slider__text">Proyecto sencillo de la página en la que te encuuentas</div>
+                            <a href="https://github.com/DanielArboledaT/MyPortfolio" class="button button--flex"><i style="margin-right: 5px;" class="lni lni-code-alt"></i> GET
+                                CODE</a>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="blog-slider__pagination"></div>
+            </div>
+
+        </section>
+
+        <section class="contact section" id="section">
+            <h2 class="section_title">Constact Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+
+            <div class="contact_container container grid">
+
+                <div>
+                    <div class="contact_information">
+                        <i class="fa-solid fa-envelope contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">tttdanie.97@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact_information">
+                        <i class="lni lni-phone contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Call me</h3>
+                            <span class="contact_subtitle">(+57) 3006954640</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Project</label>
+                        <input type="text" class="contact_input">
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send message
+                            <i class="fa-solid fa-comment button_icon"></i>
+                        </a>
+                    </div>
+                </form>
+            
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+  
+<!--
             <div>
                 <h2>Protafolio</h2>
                 <p>
@@ -224,12 +496,11 @@
     
         </div>
 
-    </div>
+    </div>-->
 
     
 
-    <script text="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.2/swiper-bundle.min.js"></script>
     <script text="text/javascript" src="/js/main.js"></script>
 </body>
 
